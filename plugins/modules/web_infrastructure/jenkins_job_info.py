@@ -197,7 +197,7 @@ def get_jobs(module):
                 "name": job_info["name"],
                 "fullname": job_info["fullName"],
                 "url": job_info["url"],
-                "color": job_info["color"]
+                "color": job_info["color"] if job_info.get("color") else None
             })
 
     else:
